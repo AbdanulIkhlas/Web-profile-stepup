@@ -1,5 +1,5 @@
 
-export const portfolios = [
+export const portfoliosData = [
     {
       id: 1,
       imageCard: "./images/portfolio-card-1.png",

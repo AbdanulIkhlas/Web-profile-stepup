@@ -5,16 +5,13 @@ import CardPortfolio from "../components/Fragments/CardPortfolio";
 import { getPortfolios } from "../services/portfolio.service";
 import isEqual from "lodash.isequal";
 import StylizedFrame from "../components/Elements/StylizedFrame";
+import { portfoliosData } from "../data/portfolio";
 
 const Portfolio = () => {
   // object card portfolio
   const [portfolios, setPortfolios] = useState([]);
   useEffect(() => {
-    getPortfolios((data) => {
-      if (!isEqual(data, portfolios)) {
-        setPortfolios(data);
-      }
-    });
+    setPortfolios(portfoliosData);
   }, [portfolios]);
   return (
     <div className="relative pb-[550px] md:pb-[350px] lg:pb-[400px]">

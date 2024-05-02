@@ -12,7 +12,6 @@ import {
   destroyArticle,
   getLatestArticle,
 } from "../services/article.service";
-import NavbarDev from "../components/Fragments/NavbarDev";
 import Navbar from "../components/Fragments/Navbar";
 import useVerifyUser from "../hooks/useVerifyUser";
 

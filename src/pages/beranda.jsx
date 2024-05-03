@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 import { portfolioData } from "../data/portfolio";
+import { Link } from "react-router-dom";
 
 AOS.init();
 
@@ -97,7 +98,9 @@ const Beranda = () => {
               dunia IT
             </p>
             <button className="w-[148px] h-[40px] text-sm font-normal mt-10 text-white bg-primary rounded-full transition hover:shadow-lg hover:shadow-primary/50 hover:bg-gradient-to-l from-primary to-[#2B3087] duration-300">
-              Konsultasi Sekarang
+              <Link to="/konsultasi" className=" text-xs text-start">
+                Konsultasi Sekarang
+              </Link>
             </button>
           </div>
           <div className="w-full md:w-[90%] h-auto me-20 mb-[53px] bg-[url('./images/vector-2.png')] md:bg-[url('./images/vector-2-lg.png')] bg-contain md:scale-90 bg-no-repeat mt-10 md:mt-28 relative">

@@ -17,7 +17,7 @@ const TeamCard = (props) => {
         className="w-full h-[122px] object-cover lg:h-[261px]"
       />
       <div className="flex flex-col items-center justify-center text-center px-4 py-3">
-        <div className="min-h-8 lg:px-12 lg:py-4">
+        <div className="min-h-8 lg:px-14 lg:py-4">
           <p className="font-bold text-xs lg:text-xl">{name.toUpperCase()}</p>
         </div>
         <p className="font-medium text-xs mt-3 text-primary lg:text-xl ">

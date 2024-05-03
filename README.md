@@ -1,8 +1,11 @@
 
 
-<div align="center" style="display: flex; justify-content: center;">
+<div align="center">
   <h1>Web-profile</h1>
-  <h3>Web Profile Step Up Project</h3>
+  <p>Step Up Project adalah sebuah komunitas yang bergerak untuk digitalisasi bisnis dan organisasi melalui pengembangan dan pengelolaan aplikasi web yang professional dan terpercaya. Step Up Project juga hadir sebagai edukasi seputar dunia IT dengan informasi terupdate yang disajikan dalam artikel dan konten digital kami.
+</p>
+  <p>Semua itu kami capai dengan menggunakan teknologi dan proses terbaik seuai dengan perkembangan dunia IT. Hal ini memastikan layanan yang kami berikan adalah solusi terbaik untuk anda.</p>
+  
 </div>
 
 <div align="center" style="display: flex; justify-content: center;">
@@ -10,23 +13,12 @@
 </div>
 
 
-<div align="center" style="display: flex; justify-content: center;">
-  <img src="./docs/docs1.png" alt="Login Page" width="157">&nbsp;
-  <img src="./docs/docs2.png" alt="Main Menu" width="157">&nbsp;
-  <img src="./docs/docs3.png" alt="Sub Menu 1" width="157">&nbsp;
-  <img src="./docs/docs4.png" alt="Sub Menu 2" width="157">&nbsp;
-  <img src="./docs/docs5.png" alt="Sub Menu 3" width="157">
+<div align="center">
+  <img src="./docs/docs1.png" alt="docs1" width="720"><br>
+  <img src="./docs/docs2.png" alt="docs2" width="720"><br>
+  <img src="./docs/docs3.png" alt="docs3" width="720"><br>
+  <img src="./docs/docs4.png" alt="docs4" width="720"><br>
 </div>
 
 
 <br>
-
-
-
-<div align="center" style="display: flex; justify-content: center; margin-top: 20px;">
-  <img src="./docs/docs6.png" alt="Sub Menu 4" width="157">&nbsp;
-  <img src="./docs/docs7.png" alt="Sub Menu 5" width="157">&nbsp;
-  <img src="./docs/docs8.png" alt="Stopwatch" width="157">&nbsp;
-  <img src="./docs/docs9.png" alt="Bantuan" width="157">&nbsp;
-  <img src="./docs/docs10.png" alt="Favorite Menu" width="157">
-</div>

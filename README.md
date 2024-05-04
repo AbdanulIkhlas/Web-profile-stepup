@@ -5,7 +5,8 @@
   <p>Step Up Project adalah sebuah komunitas yang bergerak untuk digitalisasi bisnis dan organisasi melalui pengembangan dan pengelolaan aplikasi web yang professional dan terpercaya. Step Up Project juga hadir sebagai edukasi seputar dunia IT dengan informasi terupdate yang disajikan dalam artikel dan konten digital kami.
 </p>
   <p>Semua itu kami capai dengan menggunakan teknologi dan proses terbaik seuai dengan perkembangan dunia IT. Hal ini memastikan layanan yang kami berikan adalah solusi terbaik untuk anda.</p>
-  
+  <br>
+  <p>Link Website : https://stepup-project.netlify.app/</p>
 </div>
 
 <div align="center" style="display: flex; justify-content: center;">

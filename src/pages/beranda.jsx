@@ -161,28 +161,28 @@ const Beranda = () => {
           </div>
         </div>
       </section>
-        <section className="w-full ps-4 pt-8 bg-slate-100 border border-black">
-          <SectionHead>Partner</SectionHead>
-          <div className="mt-8">
-            <Carousel
-              data={customers}
-              srcLeftButtonPath={`../../svg/left-arrow.svg`}
-              srcRightButtonPath={`../../svg/right-arrow.svg`}
-              chooseFragment="partner"
-            />
-          </div>
-        </section>
+      <section className="w-full ps-4 pt-8 bg-slate-100">
+        <SectionHead>Partner</SectionHead>
+        <div className="mt-8">
+          <Carousel
+            data={customers}
+            srcLeftButtonPath={`../../svg/left-arrow.svg`}
+            srcRightButtonPath={`../../svg/right-arrow.svg`}
+            chooseFragment="partner"
+          />
+        </div>
+      </section>
 
       <section className="w-full my-10 bg-white">
         <SectionHead>Testimoni</SectionHead>
         <div className="mt-8">
-            <Carousel
-              data={reviews}
-              srcLeftButtonPath={`../../svg/left-arrow.svg`}
-              srcRightButtonPath={`../../svg/right-arrow.svg`}
-              chooseFragment="review"
-            />
-          </div>
+          <Carousel
+            data={reviews}
+            srcLeftButtonPath={`../../svg/left-arrow.svg`}
+            srcRightButtonPath={`../../svg/right-arrow.svg`}
+            chooseFragment="review"
+          />
+        </div>
       </section>
 
       <section className="h-auto">

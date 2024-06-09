@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import PropTypes from "prop-types";
 import { portfolioData } from "../data/portfolio";
 import { Link } from "react-router-dom";
+import Carousel from "../components/Fragments/Carousel.jsx";
 
 AOS.init();
 
@@ -37,33 +38,48 @@ const Beranda = () => {
   const customers = [
     {
       id: 1,
-      image: "./images/pelanggan-1.png",
+      image: "./images/himatif-logo.png",
+    },
+  ];
+
+  const reviews = [
+    {
+      id: 1,
+      image: "./images/testimoni/testimoni-1.jpg",
+      name: "Rio Rivaldo Sinuhaji",
+      content:
+        "Salah satu hal yang saya dapatkan setelah Mini Course ini adalah menambah pengetahuan tentang desain UI/UX yang sebelumnya saya tidak tahu. Semoga Step Up terus membagi ilmu seperti ini",
     },
     {
       id: 2,
-      image: "./images/pelanggan-1.png",
+      image: "./images/testimoni/testimoni-2.png",
+      name: "Bayu Prasetya Wijaya",
+      content:
+        "Adanya Mini Course : UI/UX For Beginner membuat saya bisa tahu dan belajar skill baru dalam desain aplikasi. Harapan saya, semoga Step Up melanjutkan untuk terus berbagi ilmu",
     },
     {
       id: 3,
-      image: "./images/pelanggan-1.png",
+      image: "./images/dummy-profile.png",
+      name: "Alfat Rahman",
+      content:
+        "Kegiatan Mini Course ini sangat seru. Berbagi ilmunya tetaplah dilanjutkan",
     },
     {
       id: 4,
-      image: "./images/pelanggan-1.png",
+      image: "./images/dummy-profile.png",
+      name: "Annas Sovianto",
+      content:
+        "Pengalaman saya setelah mengikuti Mini Course : UI/UX For Beginner ini adalah menambah wawasan, upgrade skill, upgrade relasi serta menumbuhkan potensi. Semoga berbagi ilmunya tidak pernah berhenti",
     },
     {
       id: 5,
-      image: "./images/pelanggan-1.png",
-    },
-    {
-      id: 6,
-      image: "./images/pelanggan-1.png",
-    },
-    {
-      id: 7,
-      image: "./images/pelanggan-1.png",
+      image: "./images/dummy-profile.png",
+      name: "Dea Reigina",
+      content:
+        "Mini Course ini membuat saya jadi tahu tools Figma yang sebelumnya saya belum tahu",
     },
   ];
+
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
@@ -145,23 +161,27 @@ const Beranda = () => {
           </div>
         </div>
       </section>
-      <section className="h-auto">
-        <div className="w-full ps-4 py-8 bg-slate-100">
-          <SectionHead>Pelanggan Kami</SectionHead>
-          <div className="w-full flex justify-center items-center gap-4 overflow-x-scroll">
-            {customers.map((item) => (
-              <img key={item.id} src={item.image} alt="" />
-            ))}
-          </div>
+      <section className="w-full ps-4 pt-8 bg-slate-100">
+        <SectionHead>Partner</SectionHead>
+        <div className="mt-8">
+          <Carousel
+            data={customers}
+            srcLeftButtonPath={`../../svg/left-arrow.svg`}
+            srcRightButtonPath={`../../svg/right-arrow.svg`}
+            chooseFragment="partner"
+          />
         </div>
       </section>
 
-      <section className="h-auto">
-        <div className="w-full ps-4 pt-8 pb-12 bg-white">
-          <SectionHead>Testimoni</SectionHead>
-          <div className="flex flex-row items-center">
-            <ReviewCard></ReviewCard>
-          </div>
+      <section className="w-full my-10 bg-white">
+        <SectionHead>Testimoni</SectionHead>
+        <div className="mt-8">
+          <Carousel
+            data={reviews}
+            srcLeftButtonPath={`../../svg/left-arrow.svg`}
+            srcRightButtonPath={`../../svg/right-arrow.svg`}
+            chooseFragment="review"
+          />
         </div>
       </section>
 
@@ -224,44 +244,6 @@ const OurCustomer = (props) => {
   return (
     <div className="flex h-[100px] w-min-[100px] items-center justify-center">
       <img src={image} alt="" className="" />
-    </div>
-  );
-};
-const ReviewCard = () => {
-  return (
-    <div
-      className="mx-auto mt-6 ps-6 bg-white w-[292px] h-[168px] md:h-[342px] md:w-[75%] rounded-xl border-2 border-slate-500 relative 
-    drop-shadow-[2px_17px_10px_rgba(0,172,193,0.4)] "
-    >
-      <div className="flex flex-row items-center w-full h-full py-4">
-        <img
-          src="./images/testimoni/pp-1.png"
-          alt=""
-          className="h-20 w-20 md:h-40 md:w-40"
-        />
-        <div className="flex flex-col">
-          <p className="md:h-[50%] pe-1 md:pe-5 ps-7 text-xs md:text-sm text-pale mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Pariatur similique non
-            vel. Lorem ipsum dolor sit,
-            <span className="hidden md:block">
-              amet consectetur adipisicing elit. Quas eligendi sunt recusandae
-              est, doloribus laborum fugit, quia quod tempore error facere animi
-              dolorem libero alias ducimus quisquam accusantium accusamus
-              repellendus! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Aspernatur exercitationem debitis vero explicabo tempora
-              dolores in iste quod enim. Fuga voluptatum sunt optio quaerat
-              rerum expedita tenetur quam consequuntur commodi laudantium,
-              officiis voluptatem odit. Facere magnam repudiandae dicta suscipit
-              aspernatur voluptatem, dolores cum, necessitatibus incidunt, ut
-              doloremque ullam laborum nostrum!
-            </span>
-          </p>
-          <div className="flex flex-row items-center min-h-7 max-h-7 h-full absolute bottom-4">
-            <p className="text-sm font-bold">Al Ikhsan</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
